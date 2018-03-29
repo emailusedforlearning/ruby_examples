@@ -13,9 +13,10 @@ def sum_of_nums
       @sum_num+=@num
       @num+=1
     else
+      puts @num.to_s + '***'
       @num+=1
     end
   end
 end
 sum_of_nums
-puts 'sum of all numbers divisible by 3 or 5 sums to: ' + @sum_num.to_s
+puts 'sum of all numbers divisible by 3 or 5 sums to: ' + @sum_num.to_s + ' *** indicates non-divisible by 3 or 5.'
